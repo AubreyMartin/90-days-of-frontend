@@ -2,13 +2,18 @@ Day 1 — About Me page
 Build a page with your name in h1, a short bio in p, a ul of your hobbies, an ol of your top 3 goals, and a dl of 2–3 terms you learned.
 
 Day 2 — Class Timetable
-Build a table of your weekly class schedule. Use thead with th for days, tbody with tr and td for time slots. Add a style attribute to give the table a border and some color.
+Build a table of your weekly class schedule.
+Use thead with th for days, tbody with tr and td for time slots.
+Add a style attribute to give the table a border and some color.
 
 Day 3 — Div Layout
-Build a page with 3 div blocks — a header, a content area, and a footer. Give each a different background-color, a height, and centered text using the style attribute.
+Build a page with 3 div blocks — a header, a content area, and a footer.
+Give each a different background-color, a height, and centered text using the style attribute.
 
 Day 4 — Blog Post Page
-Build a blog post page using only semantic tags — header, nav, main, article, aside, and footer. No divs. Put real-looking placeholder text in each section.
+Build a blog post page using only semantic tags — header, nav, main, article, aside, and footer.
+No divs.
+Put real-looking placeholder text in each section.
 
 Day 5 — Media Page
 Build a page with an img (any image), an iframe embedding a YouTube video or Google Map, and a video tag with the controls attribute.
