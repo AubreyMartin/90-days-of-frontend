@@ -1,0 +1,183 @@
+<!-- Day 5 — Media Page
+Build a page with an img (any image), an iframe embedding a YouTube video and Google Map, and a video tag with the controls attribute. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Media Page</title>
+  </head>
+  <body
+    style="
+      width: 100%;
+      height: 2000px;
+      background-image: url(/Asstes/Goa\ image1.jpg);
+    ">
+    <h1
+      style="
+        width: 100%;
+        height: 50px;
+        border: 3px double white;
+        margin: 10px;
+        text-align: center;
+        align-content: center;
+        color: whitesmoke;
+      ">
+      let's Discover Goa
+    </h1>
+
+    <p
+      style="
+        width: 100%;
+        height: 90px;
+        text-align: center;
+        align-content: center;
+      ">
+      Goa is one of India’s most popular travel destinations, known for its
+      beautiful beaches, vibrant nightlife, and rich Portuguese heritage. From
+      relaxing by the sea to exploring historic churches and enjoying local
+      seafood, Goa offers a perfect mix of culture and leisure for every
+      traveler.
+    </p>
+    <!-- Video tag -->
+
+    <div style="text-align: center">
+      <video
+        src="/Asstes/videoplayback.mp4"
+        style="width: 90%; border: 3px dotted white"
+        controls
+        autoplay
+        muted></video>
+    </div>
+
+    <div
+      style="
+        border: 3px dotted white;
+        margin: 10px;
+        color: white;
+        width: 100%;
+        text-align: center;
+      ">
+      <h2>Moments from Goa</h2>
+      <div>
+        <img src="/Asstes/Goa chruch .avif" alt="Chruch" style="width: 25%" />
+        <img src="/Asstes/Goa3.avif" alt=" Goa beach" style="width: 25%" />
+        <img src="/Asstes/Goa5.avif" alt="Goa View" style="width: 25%" />
+      </div>
+    </div>
+    <!-- Youtube -->
+    <div
+      style="
+        width: 100%;
+        text-align: center;
+        border: 3px dotted white;
+        margin: 10px;
+      ">
+      <h2 style="color: yellow">Glimps of Goa</h2>
+      <h3 style="color: yellow">Top 10 place to visit Goa by Sakre Cubes</h3>
+
+      <iframe
+        style="border-radius: 20px; border: 10px solid white"
+        width="40%"
+        height="300px"
+        src="https://www.youtube.com/embed/h7SAwlnWsjw"
+        title="Goa Places to Visit | Goa Trip | Goa Tourist places | Places to visit in Goa | Goa Beach | South Goa"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <iframe
+        style="border-radius: 20px; border: 10px solid white"
+        width="40%"
+        height="300px"
+        src="https://www.youtube.com/embed/rS1qwqCtAIc?si=6koch6LA7Mh6vd0S"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+    <!-- maps -->
+
+    <div
+      style="
+        width: 100%;
+        text-align: center;
+        color: white;
+        height: 400px;
+        border: 3px dotted white;
+        margin: 10px;
+      ">
+      <h1>Directions to the best beaches in Goa</h1>
+      <div>
+        <title>Cola Beach</title>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.83518367348!2d73.97217429999999!3d15.0572298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe4f034b05b837%3A0xf52f19eaf1b9498a!2sCola%20Beach!5e0!3m2!1sen!2sin!4v1775648787504!5m2!1sen!2sin"
+          width="25%"
+          style="border: 3px solid white"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15414.802516883006!2d74.01107596512682!3d15.009314643169839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe4551d05b02bb%3A0x1e1bc67d4b0fbbf5!2sPalolem%20Beach!5e0!3m2!1sen!2sin!4v1775649427342!5m2!1sen!2sin"
+          width="25%"
+          style="border: 3px solid white"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245858.33493093462!2d73.44587532500003!3d15.669652200000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeee85d4085d1%3A0xee6c10d759574ec0!2sMandrem%20Beach!5e0!3m2!1sen!2sin!4v1775649244635!5m2!1sen!2sin"
+          width="25%"
+          style="border: 3px solid white"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245858.33493093462!2d73.44587532500003!3d15.669652200000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc13c227bd1bf%3A0xfa2f8c6c1efa4aef!2sCandolim%20Beach!5e0!3m2!1sen!2sin!4v1775649267735!5m2!1sen!2sin"
+          width="25%"
+          style="border: 3px solid white"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246402.7973929033!2d73.67130732500001!3d15.210774199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea1cd3bb00c3%3A0x4d841716929dd0c2!2sBaga%20Beach!5e0!3m2!1sen!2sin!4v1775649293500!5m2!1sen!2sin"
+          width="25%"
+          style="border: 3px solid white"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15369.591231711835!2d73.7183128615865!3d15.623790814201307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfe976d9a386af%3A0x1f46aebbe429d6d2!2sMorjim%20Beach%20Goa!5e0!3m2!1sen!2sin!4v1775649361001!5m2!1sen!2sin"
+          width="25%"
+          style="border: 3px solid white"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      Google Maps
+    </div>
+  </body>
+</html>
