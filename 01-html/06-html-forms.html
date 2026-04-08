@@ -1,0 +1,44 @@
+<!-- Day 6 — Signup Form
+Build a signup form with fields for: name text, email email, phone tel, DOB date, gender radio, interests checkbox, and a submit button. Use action="#" and method="post".
+ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="width: 100%; text-align: center; background-color: azure">
+    <form action="#" method="post">
+      <h1>Form</h1>
+      <div style="margin: 20px">
+        <input type="text" placeholder="First Name" style="width: 25%" />
+        <input type="text" placeholder="last Name" style="width: 25%" />
+      </div>
+
+      <div style="margin: 20px">
+        <input type="email" placeholder="Email " style="width: 25%" />
+        <input
+          type="tel"
+          name=""
+          placeholder=" Add Phone Number"
+          style="width: 25%" />
+      </div>
+
+      <div style="margin: 20px">
+        <input type="date" placeholder="DOB" style="width: 25%" />
+        <input type="radio" name="gender" /> Female
+        <input type="radio" name="gender" /> Male
+        <input type="radio" name="gender" /> Other
+      </div>
+      <div style="margin: 20px">
+        <input type="checkbox" name="interest" /> Travel
+        <input type="checkbox" name="interest" /> Cars
+        <input type="checkbox" name="interest" /> Music
+        <input type="checkbox" name="interest" /> Tech
+        <input type="checkbox" name="interest" /> Sports
+      </div>
+      <button type="submit" style="width: 50%">Submit</button>
+    </form>
+  </body>
+</html>
