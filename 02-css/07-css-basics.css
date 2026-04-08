@@ -1,0 +1,23 @@
+/* Day 7 — CSS 3 Ways
+Take your Day 1 
+About Me page and style it 3 ways in 3 separate files — inline.html
+using style attributes, internal.html using a <style> tag, and external.html linked to a style.css file. Same visual result, 3 different methods.
+ */
+
+
+.Personalinfo {
+    width: 100%;
+    background-color: lightcyan;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.Personaldetails {
+    text-align: justify;
+}
+
+.unlist {
+    list-style-type: none;
+    padding: 0;
+}
