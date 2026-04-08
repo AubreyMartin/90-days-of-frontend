@@ -10,25 +10,60 @@ Add a style attribute to give the table a border and some color. -->
     <title>Document</title>
   </head>
   <body>
-    <table>
-      <tr>
-        <th>Day</th>
-        <th>Time</th>
-        <th>Course</th>
-        <th>Instructor</th>
+
+    <style>
+
+      th{width: 200px; height: 50px; 
+
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+
+      
+    </style>
+ 
+    <table style="  border: 1px solid black; color: blue; text-align: center; border-collapse: collapse;  ">
+      <tr style="color: red; " >
+        <th >Day</th>
+        <th >Time</th>
+        <th >Course</th>
+        <th > Instructor</th>
       </tr>
-      <tr></td>
+    
+
+      </tr">
         <td>Monday</td>
         <td>9:00 AM</td>
         <td>HTML</td>
         <td>John Doe</td>
       </tr>
+
       <tr>
         <td>Tuesday</td>
         <td>10:00 AM</td>
         <td>CSS</td>
         <td>Jane Doe</td>
       </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>10:00 AM</td>
+        <td>JS</td>
+        <td>Jane </td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>10:00 AM</td>
+        <td>React</td>
+        <td> Doe</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>10:00 AM</td>
+        <td>Nodejs</td>
+        <td>Jane </td>
+      </tr>
+
     </table>
   </body>
 </html>
