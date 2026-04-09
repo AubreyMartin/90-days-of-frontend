@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.Cities {
+    width: 100%;
+    margin: auto;
+    display: table;
+    clear: both;
+    padding: 30px;
+    background-color: antiquewhite;
+
+}
+
+.city {
+    width: 25%;
+    text-align: center;
+    float: left;
+    background-color: aqua;
+    padding: 10px;
+
+
+}
+
+.countries {
+    width: 100%;
+    display: table;
+    clear: both;
+    padding: 30px;
+    background-color: rebeccapurple;
+
+}
+
+.country {
+    width: 25%;
+    text-align: center;
+    float: left;
+    color: aliceblue;
+    background-color: black;
+    padding: 10px;
+}

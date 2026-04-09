@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    /* background-color: rgba(2, 2, 23, 0.5); */
+
+}
+
+.hero {
+    width: 100%;
+    height: 700px;
+    background-image: url("/Asstes/Netflix/BGW.jpg");
+    background-size: cover;
+
+
+}
+
+.main {
+    width: 100%;
+    background-color: rgba(2, 2, 23, 0.5);
+    text-align: center;
+    padding: 50px;
+    color: white;
+
+
+}
+
+
+header {
+    width: 100%;
+    height: 20%;
+    display: table;
+    background-color: rgba(2, 2, 23, 0.5);
+    clear: both;
+}
+
+.logo {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: start;
+    padding-left: 20px;
+
+
+}
+
+
+nav {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    float: left;
+    text-align: center;
+
+}
+
+img {
+    width: 50%;
+    height: 80px;
+
+}
+
+nav select {
+    width: 25%;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px sold white;
+    background-color: transparent;
+    color: white;
+
+}
+
+nav button {
+    background-color: red;
+    width: 20%;
+    height: 30px;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+
+
+input[type="email"] {
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.getstarted button {
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+
+
+}
+
+.movieslist {
+    width: 100%;
+    float: left;
+    display: table;
+    clear: both;
+    color: white;
+    background-color: rgba(2, 2, 23, 0.5);
+    padding: 0px;
+}
+
+.movieslist h2 {
+    text-align: start;
+    padding: 10px;
+
+}
+
+.movies {
+    width: 13%;
+    height: 156px;
+    float: left;
+    /* border: 1px solid white; */
+    text-align: center;
+
+
+}
+
+.movieslist img {
+    width: 112px;
+    height: 156px;
+    border-radius: 5px;
+
+}
+
+
+
+.reasons {
+    width: 100%;
+    display: table;
+    background-color: black;
+
+}
+
+
+.reason {
+    width: 50%;
+    height: 200px;
+    float: left;
+    text-align: start;
+    border: 3px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(67, 61, 91, 0.37);
+    padding: 10px;
+
+}
+
+.reasons .reasonheading {
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+.reason h2 {
+    color: white;
+}
+
+.reasons .icon {
+    text-align: end;
+}
+
+footer {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer button {
+    background-color: red;
+    width: 20%;
+    height: 50px;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+footer p {
+    color: white;
+}
+
+footer input[type="email"] {
+    width: 500px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}

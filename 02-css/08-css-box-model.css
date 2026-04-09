@@ -1,1 +1,33 @@
 /* CSS Box Model Practice */
+* {
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-color: blue;
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+    border: 3px double gray;
+    text-align: center;
+
+}
+
+.box2 {
+    background-color: yellow;
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+    border: 4px dotted red;
+    text-align: center;
+
+}
+
+.box3 {
+    background-color: red;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+}
