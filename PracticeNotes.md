@@ -27,6 +27,10 @@ Take your Day 1 About Me page and style it 3 ways — inline.html using style at
 Day 8 — CSS Box Model Practice
 Build a webpage with a heading “Box Model Demo” and 3 boxes (e.g., Box 1, Box 2, Box 3), each with fixed width, different padding, border thickness, and margin values, so the difference between content, padding, border, and margin is clearly visible, using box-sizing: border-box.
 
-Day 9 — CSS
+Day 9 — CSS Display & Float Practice
+Build a webpage that demonstrates display properties (inline, block, inline-block, none) using elements like p, div, span, and a, and create a layout using float (left/right) with multiple boxes, fix float collapsing using clearfix or clear, apply default CSS reset (\*, margin, padding, box-sizing, font-family), and use different selectors (descendant, grouping, global).
 
-Day 10 — CSS
+Day 10 — Netflix Clone Layout
+Build a simple Netflix-style webpage using proper structure (body, header, nav, hero section with a logo div), apply styling using class and element selectors, and use units like vh and px to create a full-screen layout inspired by a streaming site.
+
+Day 11-
