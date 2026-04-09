@@ -24,8 +24,9 @@ Build a signup form with fields for: name text, email email, phone tel, DOB date
 Day 7 — CSS 3 Ways
 Take your Day 1 About Me page and style it 3 ways — inline.html using style attributes, internal.html using a <style> tag, and external.html linked to a style.css file. Same visual result, 3 different methods.
 
-Day 8 — CSS
+Day 8 — CSS Box Model Practice
+Build a webpage with a heading “Box Model Demo” and 3 boxes (e.g., Box 1, Box 2, Box 3), each with fixed width, different padding, border thickness, and margin values, so the difference between content, padding, border, and margin is clearly visible, using box-sizing: border-box.
 
-Day 9— CSS
+Day 9 — CSS
 
 Day 10 — CSS
