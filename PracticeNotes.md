@@ -35,3 +35,12 @@ Build a simple Netflix-style webpage using proper structure (body, header, nav, 
 
 Day 11 — Flexbox Layout Practice
 Build a webpage that uses Flexbox to create a layout with multiple boxes aligned side by side, centered, and spaced evenly, using display:flex, justify-content, align-items, flex-direction, and flex-wrap to control alignment, direction, spacing, and responsiveness.
+
+Day 12 — Position & Z-Index Practice
+Build a webpage that demonstrates different CSS position values (static, relative, absolute, fixed, sticky) using multiple elements, apply top/right/bottom/left to move them, and use z-index to control stacking order and layering between elements.
+
+Day 13 — Figma Practice
+Design a simple webpage layout in Figma (like a landing page or app UI), including a header, sections, and basic components, focusing on structure, spacing, alignment, and visual hierarchy.
+
+Day 14 — Position & Z-Index Practice
+Build a webpage that demonstrates different CSS position values (static, relative, absolute, fixed, sticky) using multiple elements, apply top/right/bottom/left to move them, and use z-index to control stacking order and layering between elements.
