@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>90 Days of Frontend — Aubrey Martin</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d0d;
+    --surface: #161616;
+    --surface2: #1e1e1e;
+    --border: rgba(255,255,255,0.08);
+    --border2: rgba(255,255,255,0.15);
+    --text: #f0ede8;
+    --muted: #888;
+    --done-bg: #0f2318;
+    --done-border: #2a6640;
+    --done-text: #4ade80;
+    --today-bg: #0c1a2e;
+    --today-border: #2563eb;
+    --today-text: #60a5fa;
+    --accent: #f0f0e8;
+    --streak: #f97316;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 4rem 2rem 3rem;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-title span {
+    color: var(--done-text);
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+
+  /* STATS ROW */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    transition: border-color 0.2s;
+  }
+
+  .stat-card:hover { border-color: var(--border2); }
+
+  .stat-card.streak-card { border-color: rgba(249,115,22,0.3); }
+
+  .stat-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-card.streak-card .stat-num { color: var(--streak); }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* PROGRESS BAR */
+  .progress-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .progress-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .progress-meta span {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .progress-meta strong {
+    color: var(--done-text);
+  }
+
+  .progress-track {
+    height: 4px;
+    background: var(--surface2);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2a6640, #4ade80);
+    border-radius: 99px;
+    transition: width 1s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  /* PHASE */
+  .phase-block {
+    margin-bottom: 2.5rem;
+  }
+
+  .phase-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .phase-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .phase-done-badge {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 99px;
+    background: var(--done-bg);
+    color: var(--done-text);
+    border: 1px solid var(--done-border);
+  }
+
+  .phase-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* GRID */
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 8px;
+  }
+
+  .day-cell {
+    border-radius: 10px;
+    padding: 10px 6px 8px;
+    text-align: center;
+    cursor: default;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    transition: transform 0.15s, border-color 0.15s, background 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 62px;
+    position: relative;
+  }
+
+  .day-cell:hover {
+    transform: translateY(-2px);
+    border-color: var(--border2);
+    z-index: 1;
+  }
+
+  .day-cell.done {
+    background: var(--done-bg);
+    border-color: var(--done-border);
+  }
+
+  .day-cell.done:hover { border-color: var(--done-text); }
+
+  .day-cell.today {
+    background: var(--today-bg);
+    border-color: var(--today-border);
+    box-shadow: 0 0 0 1px rgba(37,99,235,0.3);
+  }
+
+  .day-cell.today:hover { border-color: var(--today-text); }
+
+  .day-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    line-height: 1;
+  }
+
+  .done .day-num { color: var(--done-text); }
+  .today .day-num { color: var(--today-text); }
+
+  .day-tag {
+    font-size: 9px;
+    font-weight: 500;
+    color: var(--muted);
+    opacity: 0.7;
+    max-width: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .done .day-tag { color: var(--done-text); opacity: 0.7; }
+  .today .day-tag { color: var(--today-text); opacity: 0.8; }
+
+  .check-icon {
+    font-size: 10px;
+    color: var(--done-text);
+    opacity: 0.9;
+  }
+
+  .today-label {
+    font-size: 8px;
+    color: var(--today-text);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+
+  /* TOOLTIP */
+  .tooltip {
+    position: fixed;
+    background: #1e1e1e;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13px;
+    pointer-events: none;
+    z-index: 1000;
+    max-width: 220px;
+    display: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+
+  .tt-day {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .tt-topic {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  footer a { color: var(--done-text); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 2.5rem 1.25rem 2rem; }
+    .content { padding: 0 1.25rem 3rem; }
+    .days-grid { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <p class="hero-eyebrow">// started march 27, 2025</p>
+  <h1 class="hero-title">90 Days of<br><span>Frontend</span></h1>
+  <p class="hero-sub">HTML → CSS → Bootstrap → JavaScript → jQuery → React → MUI → Semantic UI → Ant Design → Redux</p>
+
+  <div class="stats-row" id="stats-row">
+    <div class="stat-card">
+      <div class="stat-num" id="s-done">0</div>
+      <div class="stat-label">completed</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="s-left">0</div>
+      <div class="stat-label">remaining</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="s-pct">0%</div>
+      <div class="stat-label">progress</div>
+    </div>
+    <div class="stat-card streak-card">
+      <div class="stat-num" id="s-streak">0🔥</div>
+      <div class="stat-label">current streak</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="s-best">0</div>
+      <div class="stat-label">best streak</div>
+    </div>
+  </div>
+
+  <div class="progress-section">
+    <div class="progress-meta">
+      <span>Overall progress</span>
+      <span><strong id="pct-label">0</strong> / 90 days</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="pbar" style="width:0%"></div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#2a6640; border:1px solid #4ade80;"></div>Completed</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#0c1a2e; border:1px solid #2563eb;"></div>Today</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#161616; border:1px solid rgba(255,255,255,0.08);"></div>Upcoming</div>
+  </div>
+</div>
+
+<div class="content" id="phases-container"></div>
+
+<footer>
+  <p>built in public by <a href="https://github.com/AubreyMartin" target="_blank">@AubreyMartin</a> &mdash; 90 days of frontend</p>
+</footer>
+
+<div class="tooltip" id="tooltip">
+  <div class="tt-day" id="tt-day"></div>
+  <div class="tt-topic" id="tt-topic"></div>
+</div>
+
+<script>
+const DAYS_DATA = [
+  { d:1,  tag:"HTML",    phase:"HTML",       done:true,  topic:"Elements, open/close tags, HTML structure (html, head, body), headings, paragraphs, lists (ul, ol, dl)" },
+  { d:2,  tag:"HTML",    phase:"HTML",       done:true,  topic:"Tables (thead, tbody, tr, th, td), paired vs self-closing elements, attributes, style properties (width, height, color, border)" },
+  { d:3,  tag:"HTML",    phase:"HTML",       done:true,  topic:"Website layout with div, semantic elements (header, section, footer), height in px, br tag" },
+  { d:4,  tag:"HTML",    phase:"HTML",       done:true,  topic:"Semantic HTML — nav, main, article, aside, figure, figcaption, details, summary" },
+  { d:5,  tag:"HTML",    phase:"HTML",       done:true,  topic:"Embedded content — iframe, img, svg, video with controls, offline video, maps, PDF" },
+  { d:6,  tag:"HTML",    phase:"HTML",       done:true,  topic:"Forms — action, method; all input types (text, tel, email, date, radio, checkbox, submit, file, range, color...)" },
+  { d:7,  tag:"CSS",     phase:"CSS",        done:true,  topic:"Intro to CSS — inline, internal, external. Style attribute, link/href/rel" },
+  { d:8,  tag:"CSS",     phase:"CSS",        done:true,  topic:"Box model — content, padding, border, margin. box-sizing: border-box, best practices" },
+  { d:9,  tag:"CSS",     phase:"CSS",        done:true,  topic:"Display (inline, block, inline-block, none), float (left/right/clear), clearfix, default CSS reset" },
+  { d:10, tag:"CSS",     phase:"CSS",        done:true,  topic:"Netflix layout project — viewport units (vh), class vs element selectors (.class vs element)" },
+  { d:11, tag:"CSS",     phase:"CSS",        done:true,  topic:"Project review" },
+  { d:12, tag:"CSS",     phase:"CSS",        done:true,  topic:"Flexbox — display:flex, justify-content, align-items, flex-direction, flex-wrap" },
+  { d:13, tag:"CSS",     phase:"CSS",        done:true,  topic:"Figma class — design to code workflow" },
+  { d:14, tag:"CSS",     phase:"CSS",        today:true, topic:"" },
+  { d:15, tag:"CSS",     phase:"CSS",        topic:"" },
+  { d:16, tag:"CSS",     phase:"CSS",        topic:"" },
+  { d:17, tag:"CSS",     phase:"CSS",        topic:"" },
+  { d:18, tag:"CSS",     phase:"CSS",        topic:"" },
+  { d:19, tag:"CSS",     phase:"CSS",        topic:"" },
+  { d:20, tag:"CSS",     phase:"CSS",        topic:"" },
+];
+
+const phaseMap = [
+  { name:"Bootstrap",   tag:"Bootstrap", from:21, to:30 },
+  { name:"JavaScript",  tag:"JS",        from:31, to:44 },
+  { name:"jQuery",      tag:"jQuery",    from:45, to:50 },
+  { name:"React",       tag:"React",     from:51, to:65 },
+  { name:"Material UI", tag:"MUI",       from:66, to:70 },
+  { name:"Semantic UI", tag:"Sem UI",    from:71, to:75 },
+  { name:"Ant Design",  tag:"Ant",       from:76, to:80 },
+  { name:"Redux",       tag:"Redux",     from:81, to:85 },
+  { name:"React Redux", tag:"R-Redux",   from:86, to:90 },
+];
+
+phaseMap.forEach(p => {
+  for(let i = p.from; i <= p.to; i++){
+    DAYS_DATA.push({ d:i, tag:p.tag, phase:p.name, topic:"" });
+  }
+});
+
+DAYS_DATA.sort((a,b) => a.d - b.d);
+
+const done = DAYS_DATA.filter(d => d.done).length;
+const total = 90;
+
+// Streak calc
+let currentStreak = 0, bestStreak = 0, tempStreak = 0;
+for(let i = 0; i < DAYS_DATA.length; i++){
+  if(DAYS_DATA[i].done){
+    tempStreak++;
+    if(tempStreak > bestStreak) bestStreak = tempStreak;
+  } else {
+    if(!DAYS_DATA[i].today) tempStreak = 0;
+  }
+}
+currentStreak = 0;
+for(let i = DAYS_DATA.length - 1; i >= 0; i--){
+  if(DAYS_DATA[i].done) currentStreak++;
+  else if(!DAYS_DATA[i].today) break;
+}
+
+document.getElementById('s-done').textContent = done;
+document.getElementById('s-left').textContent = total - done;
+document.getElementById('s-pct').textContent = Math.round(done/total*100) + '%';
+document.getElementById('s-streak').textContent = currentStreak + ' 🔥';
+document.getElementById('s-best').textContent = bestStreak;
+document.getElementById('pct-label').textContent = done;
+setTimeout(() => {
+  document.getElementById('pbar').style.width = (done/total*100) + '%';
+}, 100);
+
+const phases = [...new Set(DAYS_DATA.map(d => d.phase))];
+const container = document.getElementById('phases-container');
+const tooltip = document.getElementById('tooltip');
+
+phases.forEach(phase => {
+  const phaseDays = DAYS_DATA.filter(d => d.phase === phase);
+  const pDone = phaseDays.filter(d => d.done).length;
+
+  const block = document.createElement('div');
+  block.className = 'phase-block';
+
+  const header = document.createElement('div');
+  header.className = 'phase-header';
+  header.innerHTML = `
+    <span class="phase-name">${phase}</span>
+    ${pDone > 0 ? `<span class="phase-done-badge">${pDone} done</span>` : ''}
+    <div class="phase-line"></div>
+  `;
+  block.appendChild(header);
+
+  const grid = document.createElement('div');
+  grid.className = 'days-grid';
+
+  phaseDays.forEach(day => {
+    const cell = document.createElement('div');
+    const status = day.done ? 'done' : day.today ? 'today' : '';
+    cell.className = 'day-cell ' + status;
+
+    if(day.done){
+      cell.innerHTML = `<div class="day-num">D${day.d}</div><div class="check-icon">✓</div><div class="day-tag">${day.tag}</div>`;
+    } else if(day.today){
+      cell.innerHTML = `<div class="day-num">D${day.d}</div><div class="today-label">today</div><div class="day-tag">${day.tag}</div>`;
+    } else {
+      cell.innerHTML = `<div class="day-num">D${day.d}</div><div class="day-tag">${day.tag}</div>`;
+    }
+
+    cell.addEventListener('mousemove', e => {
+      tooltip.style.display = 'block';
+      const x = e.clientX + 16;
+      const y = e.clientY - 10;
+      tooltip.style.left = Math.min(x, window.innerWidth - 240) + 'px';
+      tooltip.style.top = y + 'px';
+      document.getElementById('tt-day').textContent = 'Day ' + day.d + ' — ' + day.phase + (day.today ? ' (today)' : '');
+      document.getElementById('tt-topic').textContent = day.topic || (status === '' ? 'Coming up' : day.tag + ' class');
+    });
+
+    cell.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+    grid.appendChild(cell);
+  });
+
+  block.appendChild(grid);
+  container.appendChild(block);
+});
+</script>
+</body>
+</html>
