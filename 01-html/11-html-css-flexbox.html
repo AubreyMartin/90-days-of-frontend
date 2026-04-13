@@ -1,0 +1,103 @@
+<!-- Day 11 — Flexbox Layout Practice
+Build a webpage that uses Flexbox to create a layout with multiple boxes aligned side by side, centered, and spaced evenly, 
+using display:flex, justify-content, align-items, flex-direction, and 
+flex-wrap to control alignment, direction, spacing, and responsiveness.
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/02-css/11-css-flexbox.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">📍 Hyderabad</h1>
+      <img
+        class="header__icon"
+        src="/Asstes/Food/food-icon.png"
+        alt="Food icon " />
+    </header>
+
+    <main class="main">
+      <input class="searchbar" type="search" placeholder="Search for food..." />
+
+      <section class="categories-bar">
+        <div class="categories__list">
+          <button class="categories__item">Pizza</button>
+          <button class="categories__item">Burgers</button>
+          <button class="categories__item">Desserts</button>
+          <button class="categories__item">Biryani</button>
+          <button class="categories__item">Drinks</button>
+        </div>
+      </section>
+
+      <h3 class="restaurants__title">Restaurants</h3>
+
+      <section class="restaurants">
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Paradise Biryani</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.5</p>
+          <p class="restaurant-card__category">Category: Biryani</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Burger King</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.2</p>
+          <p class="restaurant-card__category">Category: Burgers</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Domino's Pizza</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.1</p>
+          <p class="restaurant-card__category">Category: Pizza</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Pizza Hut</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.0</p>
+          <p class="restaurant-card__category">Category: Pizza</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Cream Stone</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.6</p>
+          <p class="restaurant-card__category">Category: Desserts</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Baskin Robbins</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.3</p>
+          <p class="restaurant-card__category">Category: Desserts</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">KFC</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.2</p>
+          <p class="restaurant-card__category">Category: Burgers</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Mehfil Restaurant</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.4</p>
+          <p class="restaurant-card__category">Category: Biryani</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Barbeque Nation</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.7</p>
+          <p class="restaurant-card__category">Category: Grill</p>
+        </div>
+        
+        <div class="restaurant-card">
+          <h3 class="restaurant-card__name">Cafe Coffee Day</h3>
+          <p class="restaurant-card__rating">Rating ⭐ 4.0</p>
+          <p class="restaurant-card__category">Category: Drinks</p>
+        </div>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>
