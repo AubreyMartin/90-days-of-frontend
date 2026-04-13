@@ -33,4 +33,5 @@ Build a webpage that demonstrates display properties (inline, block, inline-bloc
 Day 10 — Netflix Clone Layout
 Build a simple Netflix-style webpage using proper structure (body, header, nav, hero section with a logo div), apply styling using class and element selectors, and use units like vh and px to create a full-screen layout inspired by a streaming site.
 
-Day 11-
+Day 11 — Flexbox Layout Practice
+Build a webpage that uses Flexbox to create a layout with multiple boxes aligned side by side, centered, and spaced evenly, using display:flex, justify-content, align-items, flex-direction, and flex-wrap to control alignment, direction, spacing, and responsiveness.
