@@ -570,6 +570,36 @@ concept: HTML Css
 
 ---
 
+# Positions
+
+---
+
+Static – default, normal flow (top/left don’t work)
+
+Relative – moves from its own position, stays in normal flow
+
+Absolute – positioned relative to nearest ancestor, removed from flow
+
+Fixed – stays fixed on screen, does not move on scroll
+
+Sticky – normal flow → becomes fixed when scrolling
+
+top | right | bottom | left → used to move elements
+
+---
+
+# z-index
+
+---
+
+Stack order (layering)
+
+Default: 0
+
+Higher value → appears on top
+
+Works only with positioned elements
+
 # ========================================
 
 ###
