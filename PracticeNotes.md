@@ -33,11 +33,10 @@ Build a webpage that demonstrates display properties (inline, block, inline-bloc
 Day 10 — Netflix Clone Layout
 Build a simple Netflix-style webpage using proper structure (body, header, nav, hero section with a logo div), apply styling using class and element selectors, and use units like vh and px to create a full-screen layout inspired by a streaming site.
 
-Day 11 — Flexbox Layout Practice
-Build a webpage that uses Flexbox to create a layout with multiple boxes aligned side by side, centered, and spaced evenly, using display:flex, justify-content, align-items, flex-direction, and flex-wrap to control alignment, direction, spacing, and responsiveness.
+Day 11-## Reviwe of the project!
 
-Day 12 — Position & Z-Index Practice
-Build a webpage that demonstrates different CSS position values (static, relative, absolute, fixed, sticky) using multiple elements, apply top/right/bottom/left to move them, and use z-index to control stacking order and layering between elements.
+Day 12 — Flexbox Layout Practice
+Build a webpage that uses Flexbox to create a layout with multiple boxes aligned side by side, centered, and spaced evenly, using display:flex, justify-content, align-items, flex-direction, and flex-wrap to control alignment, direction, spacing, and responsiveness.
 
 Day 13 — Figma Practice
 Design a simple webpage layout in Figma (like a landing page or app UI), including a header, sections, and basic components, focusing on structure, spacing, alignment, and visual hierarchy.
