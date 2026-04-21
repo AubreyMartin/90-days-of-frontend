@@ -122,6 +122,11 @@ section2 .car-card {
 .car-card .arrow-right {
     width: 24px;
     height: 24px;
+}
 
 
+.car-card {
+    width: 247px;
+    height: 186px;
+    background: url("/Asstes/Porsche/cardcar1.png") center/cover no-repeat;
 }
