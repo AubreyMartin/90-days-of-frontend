@@ -43,3 +43,15 @@ Design a simple webpage layout in Figma (like a landing page or app UI), includi
 
 Day 14 — Position & Z-Index Practice
 Build a webpage that demonstrates different CSS position values (static, relative, absolute, fixed, sticky) using multiple elements, apply top/right/bottom/left to move them, and use z-index to control stacking order and layering between elements.
+
+Day 15 — Position, Z-Index & Background Practice
+Build a webpage that demonstrates CSS position values (static, relative, absolute, fixed, sticky), use top/right/bottom/left for positioning, apply z-index for layering, and use background and object-fit: cover to style and properly fit images inside containers.
+
+Day 16 — Pseudo Classes & Elements Practice
+Build a webpage that demonstrates pseudo classes (:first-child, :last-child, :nth-child, :focus, ::placeholder) and pseudo elements (::first-line, ::first-letter, ::selection, ::before, ::after), and apply different color formats (rgb, rgba, hex) to style elements.
+
+Day 20 — Advanced CSS Practice
+Build a responsive webpage using @media queries (mobile-first with breakpoints), add animations using @keyframes, apply transitions and transforms (translate, rotate, scale, skew) for smooth interactions, use flexible units (%, rem, vw), and include a custom font using @font-face.
+
+Day 20 & 21 — Advanced CSS Demo Page
+Build a single webpage that demonstrates responsive design using @media (mobile-first with breakpoints), includes animations using @keyframes with percentage steps (0% to 100%), applies transforms (translate, rotate, scale, skew) and transitions for smooth hover effects, uses flexible units (%, rem, vw), includes a custom font with @font-face, and showcases different animation properties (name, duration, timing-function, iteration-count, delay) with multiple animated elements.

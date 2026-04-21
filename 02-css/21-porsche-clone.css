@@ -1,0 +1,127 @@
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+
+
+
+.display-info-box {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    border: 2px solid red;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+
+
+
+.display-info-box h1 {
+    color: white;
+
+}
+
+.display-info-box button {
+    width: 144px;
+    height: 54px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.display-info-par {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.214);
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.menu {
+    background-color: transparent;
+    border: 0;
+
+}
+
+
+.centerlogo {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.navbuttons button {
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+
+.user {
+    color: red;
+}
+
+section2 {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    color: antiquewhite;
+}
+
+
+section2 .car-card {
+    background-color: aqua;
+    width: 247px;
+    height: 186px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 20px;
+}
+
+
+
+.car-card .arrow-right {
+    width: 24px;
+    height: 24px;
+
+
+}

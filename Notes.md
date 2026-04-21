@@ -563,10 +563,16 @@ Works only with positioned elements
 
 ###
 
-Day 15
-Tue 14th April
-Class 15
-concept: HTML Css
+Day 15  
+Tue 14th April  
+Class 15  
+Concept: HTML & CSS
+
+---
+
+# Note
+
+Same as Class 14
 
 ---
 
@@ -600,19 +606,267 @@ Higher value → appears on top
 
 Works only with positioned elements
 
+---
+
+# Extra
+
+---
+
+background
+
+object-fit: cover → covers entire container without distortion
+
 # ========================================
 
 ###
 
 ###
 
-Day 16
-Wen 15th April
-Class 16
-concept: HTML Css
+Day 16  
+Wed 15th April  
+Class 16  
+Concept: CSS
+
+---
+
+# Pseudo Classes & Elements
+
+---
+
+Pseudo Classes – special state of elements (use :)
+
+Pseudo Elements – style specific part of elements (use ::)
+
+---
+
+# Common Pseudo Classes
+
+---
+
+:first-child  
+:last-child  
+:nth-child() → 1, even, odd  
+:focus  
+::placeholder
+
+---
+
+# Common Pseudo Elements
+
+---
+
+::first-line  
+::first-letter  
+::selection  
+::before  
+::after
+
+---
+
+# Color Codes
+
+---
+
+rgb() → red, green, blue
+
+rgba() → rgb + opacity
+
+hex → #ffffff
 
 ---
 
 # ========================================
 
 ###
+
+# ========================================
+
+###
+
+###
+
+Day 17
+Thu 16th April  
+Class 17
+Concept: CSS
+
+---
+
+Just Q&A
+
+# ========================================
+
+###
+
+Day 18
+Fri 17th April  
+Class 18
+Concept: CSS
+
+---
+
+CDN
+Fonts
+Icons
+
+# SVG
+
+Best way to use :
+
+- download instead of
+-
+-
+-
+
+# ========================================
+
+###
+
+###
+
+Day 19
+Wed 18th April  
+Class 19
+Concept: CSS
+
+---
+
+###
+
+Day 20  
+Wed 20th April  
+Class 20  
+Concept: CSS
+
+---
+
+# Advanced CSS
+
+---
+
+# Rules
+
+---
+
+@media → responsive design  
+@keyframes → animations  
+@font-face → custom fonts
+
+---
+
+# Responsive Design
+
+---
+
+Adjust layout for different screen sizes
+
+Important:
+
+- Use breakpoints (e.g. 768px, 1024px)
+- Mobile-first approach (start small → scale up)
+- Use flexible units: %, rem, vw
+- Avoid fixed widths
+
+---
+
+# Animations
+
+---
+
+Use @keyframes to define steps
+
+Important:
+
+- animation-name
+- animation-duration
+- animation-iteration-count
+- animation-timing-function
+
+Example:
+@keyframes move {  
+ from { transform: translateX(0); }  
+ to { transform: translateX(100px); }  
+}
+
+---
+
+# Transforms
+
+---
+
+translate → move element
+
+rotate → rotate element
+
+scale → resize element
+
+skew → tilt element
+
+Important:
+
+- Does NOT affect layout (no space change)
+- Often used with hover
+
+---
+
+# Transitions
+
+---
+
+Smooth change between states
+
+Important:
+
+- transition-property
+- transition-duration
+- transition-delay
+- transition-timing-function
+
+Example:
+transition: all 0.3s ease;
+
+---
+
+# Extra Notes
+
+---
+
+- Use transform + transition together for smooth UI
+- Prefer transform over top/left for better performance
+- Keep animations fast (0.2s–0.5s)
+- Don’t overuse animations (keep UI clean)
+
+###
+
+Day 21
+Wed 21th April  
+Class 21
+Concept: CSS
+
+---
+
+## Animation
+
+@keyframes name {
+0%{}
+100%{}
+}
+Why we use percentage?
+:
+
+types of keyframes:
+keyframe: locations {
+0% to 100%
+}
+
+keyframes: zoom, add more to it
+
+note:
+animation should me mentioned in the class properties
+
+1. animation name
+2. animation duration (imp)
+3. animation timing function
+4. animation iteration count
+5. animation delay
+6.
