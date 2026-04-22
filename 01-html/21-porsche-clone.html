@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porsche</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/02-css/21-porsche-clone.css" />
   </head>
   <body>
     <header>
       <nav>
-        <button class="menu">Menu</button>
+        <div class="menubutton">
+          <button>
+            <img src="/Asstes/Porsche/menu-lines.e332216.svg" alt="" /> Menu
+          </button>
+        </div>
+
         <div class="centerlogo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 300">
             <title>Porsche</title>
@@ -19,26 +27,37 @@
         </div>
 
         <div class="navbuttons">
-          <button>Earth</button>
-          <button>user</button>
+          <button class="icon-btn">
+            <img src="/Asstes/Porsche/globe.56cc8fc.svg" alt="" />
+            <span class="tooltip">Country selector</span>
+          </button>
+          <button class="icon-btn">
+            <img src="/Asstes/Porsche/user.c18dabe.svg" alt="" />
+            <span class="tooltip">Account</span>
+          </button>
         </div>
       </nav>
     </header>
     <hero>
-      <video
-        class="bg-video"
-        src="/Asstes/Porsche/video_Desktop.mp4"
-        autoplay
-        loop></video>
+      <div class="bg-video">
+        <video
+          src="/Asstes/Porsche/video_Desktop.mp4"
+          autoplay
+          loop
+          playsinline></video>
+      </div>
       <section1>
         <div class="display-info-box">
           <div class="display-info-content">
             <h1>The new 911 GT3 S/C</h1>
-
             <button>Discover now</button>
           </div>
         </div>
-        <div>
+
+        <div class="centerinfo">
+          <div class="arrowdown">
+            <img src="/Asstes/Porsche/arrow-down.49c6983.svg" alt="" />
+          </div>
           <p class="display-info-par">
             Fuel consumption combined (model range): 13.7 l/100 km (preliminary
             value), CO₂-emissions combined (model range): 310 g/km (preliminary
@@ -47,39 +66,42 @@
         </div>
       </section1>
 
-      <section2>
-        <div class="car-card">
-          <h3>Macan 4 Electric.</h3>
-          <img
-            class="arrow-right"
-            src="/Asstes/Porsche/arrow-right.872716b.svg"
-            alt="logo" />
-        </div>
-        <div class="car-card">
-          <div>
+      <section class="cars">
+        <div class="car-list">
+          <div class="car-card card-1">
+            <h3>Macan 4 Electric.</h3>
+            <img
+              class="arrow-right"
+              src="/Asstes/Porsche/arrow-right.872716b.svg"
+              alt="" />
+          </div>
+
+          <div class="car-card card-2">
             <h3>Panamera 4.</h3>
             <img
               class="arrow-right"
               src="/Asstes/Porsche/arrow-right.872716b.svg"
-              alt="logo" />
+              alt="" />
+          </div>
+
+          <div class="car-card card-3">
+            <h3>The new Cayenne Electric.</h3>
+            <img
+              class="arrow-right"
+              src="/Asstes/Porsche/arrow-right.872716b.svg"
+              alt="" />
           </div>
         </div>
-        <div class="car-card">
-          <h3>The new cayenne Electric.</h3>
-          <img
-            class="arrow-right"
-            src="/Asstes/Porsche/arrow-right.872716b.svg"
-            alt="logo" />
-        </div>
-      </section2>
-      <p>
-        Macan 4 Electric: Electric energy consumption combined (model range):
-        20.4 – 17.8 kWh/100 km, CO₂-emissions combined (model range): 0 g/km |
-        Panamera 4: Fuel consumption combined (model range): 11.0 – 10.1 l/100
-        km, CO₂-emissions combined (model range): 250 – 230 g/km | Cayenne Turbo
-        Electric: Electric energy consumption combined (model range): 22.3 –
-        20.3 kWh/100 km, CO₂-emissions combined (model range): 0 g/km
-      </p>
+
+        <p class="car-info">
+          Macan 4 Electric: Electric energy consumption combined (model range):
+          20.4 – 17.8 kWh/100 km, CO₂-emissions combined (model range): 0 g/km |
+          Panamera 4: Fuel consumption combined (model range): 11.0 – 10.1 l/100
+          km, CO₂-emissions combined (model range): 250 – 230 g/km | Cayenne
+          Turbo Electric: Electric energy consumption combined (model range):
+          22.3 – 20.3 kWh/100 km, CO₂-emissions combined (model range): 0 g/km
+        </p>
+      </section>
     </hero>
     <footer></footer>
   </body>
