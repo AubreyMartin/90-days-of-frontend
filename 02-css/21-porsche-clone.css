@@ -1,8 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
 }
-
 
 
 .bg-video {
@@ -137,6 +140,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0;
+    filter: invert(1);
 
 }
 
@@ -263,4 +267,79 @@ nav {
     width: 256px;
     height: 192px;
     background: url("/Asstes/Porsche/filters_format\(webp\)_quality\(80\)\ \(1\).png") center/cover no-repeat;
+}
+
+
+
+.section3 {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+
+
+
+}
+
+.cardbox {
+    width: 40%;
+    height: 417px;
+    background-color: lightseagreen;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.cardbox h4 {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+
+.cardbox h2 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.cardbox .cardboxinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+
+}
+
+
+
+
+.cardboxbutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    background: none;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.cardboxaction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    border-radius: 5px;
 }

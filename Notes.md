@@ -870,3 +870,116 @@ animation should me mentioned in the class properties
 4. animation iteration count
 5. animation delay
 6.
+
+Day 22
+Wed 22th April  
+Class 22
+Concept: CSS
+
+---
+
+## Review of code
+
+Day 23
+Thu 23th April  
+Class 23
+Concept: Responsive Design
+
+---
+
+@media
+device based design
+
+mobile - Default to 600px
+tablet - 600px to 1000px
+laptop - 1000px to default
+
+# mobile first
+
+min-width
+
+from small to big
+
+# Laptop first
+
+max-width
+
+## from big to small
+
+note:
+Always follow the patten
+big to small or small to big
+
+big: laptop : 1000px
+tablet: below 1000px & above 600
+small: mobile : 600px
+
+---
+
+Day 24
+Fri 24th April  
+Class 24
+Concept: Bootstrap
+
+---
+
+Bootstrap:
+its all predefined Props
+Is a CSS Framework
+JS plugins
+
+# Install Bootstrap
+
+CSS- Layout
+JS- Action
+
+---
+
+bootstrap.css
+bootstrap.min.css
+
+Note:
+
+1. Classname is important
+2. Install the bootstrap
+3.
+
+bootstrap.min.css
+bootstrap.bundle.min.js
+
+## Concepts:
+
+1. grid system
+2. carousel : Slideshow
+3. nav bar : Responsive Navbar
+4. modal: dialog box
+5. Offcanvas: side bar (hidden)
+6. cards and forms
+
+container- fixed
+container-fluid-100%
+
+m - margin
+p- padding
+text
+bg
+text-bg-
+
+color name:
+danger
+primary
+s
+
+---
+
+Day 25
+Sat 25th April  
+Class 25
+Concept: CSS
+
+Day 27
+monday 27th April  
+Class 27
+Concept: Bootstrap
+
+---
