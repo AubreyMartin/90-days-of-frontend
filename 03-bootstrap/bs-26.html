@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NestFinder</title>
+    <link rel="stylesheet" href="/03-bootstrap/css/bootstrap.min.css" />
+    <script src="/03-bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">NestFinder</a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rent</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Builds</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Agent</a></li>
+          </ul>
+        </div>
+
+        <button class="btn btn-outline-primary">List Property</button>
+      </div>
+    </nav>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="mb-3">Find a home you'll love.</h1>
+            <p class="lead mb-4">
+              Browse 12,000+ verified listings across India.
+              <br />Buy, rent, or invest with confidence.
+            </p>
+          </div>
+          <div class="col-12 input-group">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter city,locality or landmark" />
+            <select class="form-select">
+              <option>Any type</option>
+              <option>House</option>
+              <option>Flat</option>
+              <option>villa</option>
+              <option>Studio</option>
+            </select>
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Latest Listings</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <!-- card 1 -->
+            <div class="card h-100">
+              <img
+                src="https://placehold.co/400x200"
+                class="card-img-top"
+                alt="Sunlit 3BHK Apartment" />
+              <div class="card-body">
+                <span class="badge bg-primary">For Sale</span>
+                <p class="fw-bold mt-2">₹85,00,000</p>
+                <h5 class="card-title">Sunlit 3BHK Apartment</h5>
+                <p class="text-muted">Banjara Hills, Hyderabad</p>
+                <p class="text-muted">3 beds · 2 baths · 1,450 sqft</p>
+                <button class="btn btn-outline-primary w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://placehold.co/400x200"
+                class="card-img-top"
+                alt="Modern Studio Flat" />
+              <div class="card-body">
+                <span class="badge bg-success">For Rent</span>
+                <p class="fw-bold mt-2">₹22,000/mo</p>
+                <h5 class="card-title">Modern Studio Flat</h5>
+                <p class="text-muted">Koramangala, Blr</p>
+                <p class="text-muted">1 beds · 1 baths · 520 sqft</p>
+                <button class="btn btn-outline-primary w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3-->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://placehold.co/400x200"
+                class="card-img-top"
+                alt="Spacious Family Villa" />
+              <div class="card-body">
+                <span class="badge bg-primary">For Sale</span>
+                <p class="fw-bold mt-2">₹2,40,00,000</p>
+                <h5 class="card-title">Spacious Family Villa</h5>
+                <p class="text-muted">Jubilee Hills, Hyderabad</p>
+                <p class="text-muted">5 beds · 4 baths · 3,800 sqft</p>
+                <button class="btn btn-outline-primary w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://placehold.co/400x200"
+                class="card-img-top"
+                alt=" Cozy 2BHK Near Metro" />
+              <div class="card-body">
+                <span class="badge bg-success">For Rent</span>
+                <p class="fw-bold mt-2">₹35,000/mo</p>
+                <h5 class="card-title">Cozy 2BHK Near Metro</h5>
+                <p class="text-muted">Whitefield, Bangalore</p>
+                <p class="text-muted">2 beds · 2 baths · 980 sqft</p>
+                <button class="btn btn-outline-primary w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://placehold.co/400x200"
+                class="card-img-top"
+                alt="Luxury Penthouse" />
+              <div class="card-body">
+                <span class="badge bg-warning text-dark">New Build</span>
+                <p class="fw-bold mt-2">₹4,10,00,000</p>
+                <h5 class="card-title">Luxury Penthouse</h5>
+                <p class="text-muted">Marine Drive, Mumbai</p>
+                <p class="text-muted">4 beds · 3 baths · 4,200 sqft</p>
+                <button class="btn btn-outline-primary w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://placehold.co/400x200"
+                class="card-img-top"
+                alt="Garden View Cottage" />
+              <div class="card-body">
+                <span class="badge bg-primary">For Sale</span>
+                <p class="fw-bold mt-2">₹68,00,000</p>
+                <h5 class="card-title">Garden View Cottage</h5>
+                <p class="text-muted">Pune Cantonment, Pune</p>
+                <p class="text-muted">3 beds · 2 baths · 1,650 sqft</p>
+                <button class="btn btn-outline-primary w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">NestFinder</h5>
+            <p>Your trusted partner in finding the perfect home.</p>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <a href="#" class="d-block text-light text-decoration-none">Buy</a>
+            <a href="#" class="d-block text-light text-decoration-none">Rent</a>
+            <a href="#" class="d-block text-light text-decoration-none"
+              >Agents</a
+            >
+            <a href="#" class="d-block text-light text-decoration-none"
+              >Contact us</a
+            >
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+            <p>Email: hello@nestfinder.in</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>
+              Address: 4th Floor, Skyline Towers, Banjara Hills, Hyderabad —
+              500034
+            </p>
+          </div>
+        </div>
+        <hr />
+        <p class="text-light text-center mb-0">
+          © 2025 NestFinder. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
