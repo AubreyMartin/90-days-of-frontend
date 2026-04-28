@@ -975,11 +975,335 @@ s
 Day 25
 Sat 25th April  
 Class 25
-Concept: CSS
+Concept: BS
 
-Day 27
+mobile first
+min-width
+
+---
+
+## Grid System
+
+================
+row
+col-12
+col-6 col-6
+
+# Responsive Breakpoint
+
+===============================
+xs- default-col-12
+sm - min 576px - col-sm-12
+md - min 768px - col-md-12
+lg - min 992px- col-lg-12
+xl - min 1200px- col-xl-12
+xxl - min 1400px- col-xxl-12
+
+123
+
+## col-12 col-sm-12 col-md-6 col-lg-6 col-lx-4 col-xxl-4
+
+1 1 2 2 3 3
+
+col-md-6 col-xl-4
+
+---
+
+Day 26
 monday 27th April  
-Class 27
+Class 26
 Concept: Bootstrap
 
 ---
+
+Build the project on bootstrap just the layout
+
+---
+
+Day 27
+Tue 28th April  
+Class 27
+Concept: Bootstrap
+
+Today: build nav in many ways
+Integrated CSS and the uses
+
+1. hardcoding
+2. website sniped
+3. wip
+
+---
+
+Week 5
+
+Day 28 – Wed 29th April
+Class 28
+Concept:
+
+Day 29 – Thu 30th April
+Class 29
+Concept:
+
+Day 30 – Fri 1st May
+Class 30
+Concept:
+
+Day 31 – Sat 2nd May
+Class 31
+Concept:
+
+Week 6
+
+Day 32 – Mon 4th May
+Class 32
+Concept:
+
+Day 33 – Tue 5th May
+Class 33
+Concept:
+
+Day 34 – Wed 6th May
+Class 34
+Concept:
+
+Day 35 – Thu 7th May
+Class 35
+Concept:
+
+Day 36 – Fri 8th May
+Class 36
+Concept:
+
+Day 37 – Sat 9th May
+Class 37
+Concept:
+
+Week 7
+
+Day 38 – Mon 11th May
+Class 38
+Concept:
+
+Day 39 – Tue 12th May
+Class 39
+Concept:
+
+Day 40 – Wed 13th May
+Class 40
+Concept:
+
+Day 41 – Thu 14th May
+Class 41
+Concept:
+
+Day 42 – Fri 15th May
+Class 42
+Concept:
+
+Day 43 – Sat 16th May
+Class 43
+Concept:
+
+Week 8
+
+Day 44 – Mon 18th May
+Class 44
+Concept:
+
+Day 45 – Tue 19th May
+Class 45
+Concept:
+
+Day 46 – Wed 20th May
+Class 46
+Concept:
+
+Day 47 – Thu 21st May
+Class 47
+Concept:
+
+Day 48 – Fri 22nd May
+Class 48
+Concept:
+
+Day 49 – Sat 23rd May
+Class 49
+Concept:
+
+Week 9
+
+Day 50 – Mon 25th May
+Class 50
+Concept:
+
+Day 51 – Tue 26th May
+Class 51
+Concept:
+
+Day 52 – Wed 27th May
+Class 52
+Concept:
+
+Day 53 – Thu 28th May
+Class 53
+Concept:
+
+Day 54 – Fri 29th May
+Class 54
+Concept:
+
+Day 55 – Sat 30th May
+Class 55
+Concept:
+
+Week 10
+
+Day 56 – Mon 1st June
+Class 56
+Concept:
+
+Day 57 – Tue 2nd June
+Class 57
+Concept:
+
+Day 58 – Wed 3rd June
+Class 58
+Concept:
+
+Day 59 – Thu 4th June
+Class 59
+Concept:
+
+Day 60 – Fri 5th June
+Class 60
+Concept:
+
+Day 61 – Sat 6th June
+Class 61
+Concept:
+
+Week 11
+
+Day 62 – Mon 8th June
+Class 62
+Concept:
+
+Day 63 – Tue 9th June
+Class 63
+Concept:
+
+Day 64 – Wed 10th June
+Class 64
+Concept:
+
+Day 65 – Thu 11th June
+Class 65
+Concept:
+
+Day 66 – Fri 12th June
+Class 66
+Concept:
+
+Day 67 – Sat 13th June
+Class 67
+Concept:
+
+Week 12
+
+Day 68 – Mon 15th June
+Class 68
+Concept:
+
+Day 69 – Tue 16th June
+Class 69
+Concept:
+
+Day 70 – Wed 17th June
+Class 70
+Concept:
+
+Day 71 – Thu 18th June
+Class 71
+Concept:
+
+Day 72 – Fri 19th June
+Class 72
+Concept:
+
+Day 73 – Sat 20th June
+Class 73
+Concept:
+
+Week 13
+
+Day 74 – Mon 22nd June
+Class 74
+Concept:
+
+Day 75 – Tue 23rd June
+Class 75
+Concept:
+
+Day 76 – Wed 24th June
+Class 76
+Concept:
+
+Day 77 – Thu 25th June
+Class 77
+Concept:
+
+Day 78 – Fri 26th June
+Class 78
+Concept:
+
+Day 79 – Sat 27th June
+Class 79
+Concept:
+
+Week 14
+
+Day 80 – Mon 29th June
+Class 80
+Concept:
+
+Day 81 – Tue 30th June
+Class 81
+Concept:
+
+Day 82 – Wed 1st July
+Class 82
+Concept:
+
+Day 83 – Thu 2nd July
+Class 83
+Concept:
+
+Day 84 – Fri 3rd July
+Class 84
+Concept:
+
+Day 85 – Sat 4th July
+Class 85
+Concept:
+
+Week 15 (Final Stretch)
+
+Day 86 – Mon 6th July
+Class 86
+Concept:
+
+Day 87 – Tue 7th July
+Class 87
+Concept:
+
+Day 88 – Wed 8th July
+Class 88
+Concept:
+
+Day 89 – Thu 9th July
+Class 89
+Concept:
+
+Day 90 – Fri 10th July
+Class 90
+Concept:
