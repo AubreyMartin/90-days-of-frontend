@@ -1026,7 +1026,7 @@ Class 27
 Concept: Bootstrap
 
 Today: build nav in many ways
-Integrated CSS and the uses
+Integrated CSS and the used it
 
 1. hardcoding
 2. website sniped
