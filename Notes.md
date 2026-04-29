@@ -1009,36 +1009,81 @@ col-md-6 col-xl-4
 
 ---
 
-Day 26
-monday 27th April  
-Class 26
+Day 26  
+Mon 27th April  
+Class 26  
 Concept: Bootstrap
 
 ---
 
-Build the project on bootstrap just the layout
+Build the project layout using Bootstrap
+
+Watch reference website
 
 ---
 
-Day 27
+Notes:
+
+1. Use Bootstrap grid system (row, col)
+2. Use container / container-fluid for layout
+3. Use Bootstrap classes instead of custom CSS (mt, p, d-flex)
+4. Keep layout responsive by default
+5. Follow mobile-first structure
+
+---
+
+Day 27  
 Tue 28th April  
-Class 27
+Class 27  
 Concept: Bootstrap
 
-Today: build nav in many ways
-Integrated CSS and the used it
+---
 
-1. hardcoding
-2. website sniped
-3. wip
+Today: Build navbar in multiple ways
+
+Integrated CSS and used it
+
+1. Hardcoding
+2. Website snippet
+3. Work in progress
+
+---
+
+Notes:
+
+1. Use Bootstrap navbar component
+2. Use flex utilities for alignment
+3. Customize navbar with your own CSS
+4. Use responsive toggle (hamburger menu)
+5. Keep code clean and reusable
 
 ---
 
 Week 5
 
-Day 28 – Wed 29th April
-Class 28
-Concept:
+Day 28 – Wed 29th April  
+Class 28  
+Concept: Bootstrap
+
+---
+
+Building cards for the watch website
+
+Adding fonts
+
+Making it responsive for mobile
+
+---
+
+Notes:
+
+1. Use Bootstrap card component
+2. Add images, title, and text inside cards
+3. Use Google Fonts or custom fonts
+4. Use grid system for responsive layout
+5. Test on different screen sizes
+
+---
 
 Day 29 – Thu 30th April
 Class 29
