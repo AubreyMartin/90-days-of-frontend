@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/03-bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/03-bootstrap/js/bootstrap.bundle.min.js" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="testDriveModal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-warning">Book a test drive</h5>
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <p class="text-secondary">
+              Fill in your details and we'll confirm within 24 hours.
+            </p>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full name</label>
+                <input
+                  type="text"
+                  class="form-control bg-secondary text-light border-0"
+                  placeholder="James Harlow" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Phone</label>
+                <input
+                  type="number"
+                  class="form-control bg-secondary text-light border-0"
+                  placeholder="+1 (310) 555-0192" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Select vehicle</label>
+                <select class="form-select bg-secondary text-light border-0">
+                  <option>Porsche 911 GT3</option>
+                  <option>Lamborghini Urus</option>
+                  <option>Rolls-Royce Ghost</option>
+                  <option>Ferrari Roma</option>
+                  <option>Bentley Continental GT</option>
+                  <option>Mercedes AMG G63</option>
+                  <option>Ducati Panigale V4 R</option>
+                  <option>BMW M1000RR</option>
+                  <option>Kawasaki Ninja H2R</option>
+                  <option>Aprilia RSV4 Factory</option>
+                  <option>Triumph Rocket 3 R</option>
+                  <option>MV Agusta F4 RC</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Preferred date</label>
+                <input
+                  type="date"
+                  class="form-control bg-secondary text-light border-0" />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message (optional)</label>
+              <textarea
+                class="form-control bg-secondary text-light border-0"
+                rows="3"
+                placeholder="Any specific requests..."></textarea>
+            </div>
+
+            <button class="btn btn-warning w-100">Confirm booking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

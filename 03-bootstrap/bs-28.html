@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/03-bootstrap/css/bootstrap.min.css" />
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="/03-bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/03-bootstrap/bs-28.css" />
     <title>VelocityX</title>
   </head>
@@ -106,22 +106,148 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div class="container-fluid py-3">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="position-relative">
-                <img src="" class="card-img-top" alt="Porsche 911 GT3" />
+                <img
+                  src="/Asstes/Car-bike/2023_porsche_911_gt3_rs_trn-1.jpg"
+                  class="card-img-top w-100"
+                  alt="Porsche 911 GT3" />
+
+                <span
+                  class="badge bg-success position-absolute top-0 start-0 m-2"
+                  >New</span
+                >
+              </div>
+              <div class="card-body bg-dark text-light">
+                <h5 class="card-title">Porsche 911 GT3</h5>
+                <p>503 BHP · PDK · Coupe</p>
+                <p class="fw-bold text-warning">$230,000</p>
+                <button class="btn btn-outline-warning w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="/Asstes/Car-bike/URus.jpg"
+                  class="card-img-top"
+                  alt="Lamborghini Urus" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="card-body bg-dark text-light">
+                <h2>Lamborghini Urus</h2>
+                <p>657 BHP · AWD · SUV</p>
+                <h6 class="text-warning">₹4.2Cr</h6>
+                <button class="btn btn-outline-warning w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="/Asstes/Car-bike/Rolls-Royce-Ghost-car-vehicle-white-cars-luxury-cars.jpg"
+                  class="card-img-top"
+                  alt="Rolls-Royce Ghost" />
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2"
+                  >Limited</span
+                >
+              </div>
+
+              <div class="card-body bg-dark text-light">
+                <h2>Rolls-Royce Ghost</h2>
+                <p>563 BHP · AWD · Sedan</p>
+                <h6 class="text-warning">₹7.9Cr</h6>
+                <button class="btn btn-outline-warning w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="/Asstes/Car-bike/roma.webp"
+                  class="card-img-top"
+                  alt="Ferrari Roma" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="card-body bg-dark text-light">
+                <h2>Ferrari Roma</h2>
+                <p>612 BHP · RWD · Coupe</p>
+                <h6 class="text-warning">$3.8Cr</h6>
+                <button class="btn btn-outline-warning w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="/Asstes/Car-bike/BB.avif"
+                  class="card-img-top"
+                  alt="Bentley Continental GT" />
                 <span
                   class="badge bg-success position-absolute top-0 start-0 m-2"
                   >New</span
                 >
               </div>
 
-              <div class="card-body">
-                <h2>Name</h2>
-                <p>BHp</p>
-                <h3 class="text-warning">price</h3>
+              <div class="card-body bg-dark text-light">
+                <h2>Bentley Continental GT</h2>
+                <p>542 BHP · AWD · Coupe</p>
+                <h6 class="text-warning">$5.5Cr</h6>
+                <button class="btn btn-outline-warning w-100">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img
+                  src="/Asstes/Car-bike/amg.jpg"
+                  class="card-img-top"
+                  alt="Mercedes AMG G63" />
+                <span
+                  class="badge bg-success position-absolute top-0 start-0 m-2"
+                  >New</span
+                >
+              </div>
+
+              <div class="card-body bg-dark text-light">
+                <h2>Mercedes AMG G63</h2>
+                <p>577 BHP · AWD · SUV</p>
+                <h6 class="text-warning">$2.8Cr</h6>
                 <button class="btn btn-outline-warning w-100">
                   View details
                 </button>
@@ -131,5 +257,119 @@
         </div>
       </div>
     </section>
+
+    <section class="py-5 bg-dark">
+      <div class="container-fluid">
+        <div class="mb-4">
+          <h2 class="text-warning">Featured vehicle</h2>
+          <p class="text-light">This month's highlight</p>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="/Asstes/Car-bike/pp.avif"
+              class="featured-img"
+              alt="Ducati Panigale V4 R" />
+          </div>
+
+          <div class="col-md-6">
+            <p class="text-warning">Superbike · Limited edition</p>
+            <h1 class="text-light">Ducati Panigale V4 R</h1>
+            <p class="text-light">
+              The most powerful road-legal Ducati ever built. 240 BHP of Italian
+              engineering, designed for those who demand the absolute best.
+            </p>
+
+            <div class="row text-center mb-4">
+              <div class="col-4">
+                <div class="bg-secondary rounded p-2">
+                  <h4 class="text-light mb-0">240</h4>
+                  <small class="text-warning">BHP</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="bg-secondary rounded p-2">
+                  <h4 class="text-light mb-0">3.0s</h4>
+                  <small class="text-warning">0–100</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="bg-secondary rounded p-2">
+                  <h4 class="text-light mb-0">299</h4>
+                  <small class="text-warning">Top km/h</small>
+                </div>
+              </div>
+            </div>
+
+            <p class="fw-bold text-warning mb-4">$42,000</p>
+            <button class="btn btn-warning">Enquire now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3 bg-dark container-fluid">
+      <p class="text-warning">Client stories</p>
+      <h1 class="text-light">What our clients say</h1>
+
+      <div class="carousel slide text-center" id="testimonials">
+        <div class="carousel-inner text-center text-light">
+          <div class="carousel-item active">
+            <div class="bg-dark">
+              <div class="text-warning">★★★★★</div>
+              <p>
+                "The experience at VelocityX was unlike anything I've had at a
+                dealership. From the test drive to delivery — absolutely
+                flawless."
+              </p>
+              <h5>Arjun Mehta, Mumbai</h5>
+              <p class="text-warning">Purchased: Porsche 911 GT3</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="bg-dark">
+              <div class="text-warning">★★★★★</div>
+              <p>
+                "Picked up my Ducati V4 R last month. The team made the whole
+                process feel effortless. Will never go anywhere else."
+              </p>
+              <h5>Tyler Brooks , Miami</h5>
+              <p class="text-warning">Purchased: Ducati Panigale V4 R</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="bg-dark">
+              <div class="text-warning">★★★★★</div>
+              <p>
+                "VelocityX is in a league of its own. The showroom, the staff,
+                the after-sales — everything is world class."
+              </p>
+              <h5>Sofia Mendez, New York</h5>
+              <p class="text-warning">Purchased: Rolls-Royce Ghost</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev bg-dark"
+          data-bs-target="#testimonials"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next bg-dark"
+          data-bs-target="#testimonials"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div></div>
+    </footer>
   </body>
 </html>

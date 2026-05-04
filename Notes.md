@@ -1087,11 +1087,17 @@ Notes:
 
 Day 29 – Thu 30th April
 Class 29
-Concept:
+Concept: Bootstrap
+
+---
 
 Day 30 – Fri 1st May
 Class 30
-Concept:
+Concept: Bootstrap
+
+---
+
+Bootstrap walk around of the website and the tools classnames and akl the sections
 
 Day 31 – Sat 2nd May
 Class 31
@@ -1101,7 +1107,14 @@ Week 6
 
 Day 32 – Mon 4th May
 Class 32
-Concept:
+Concept: Projects
+
+3 projects on web designing HTML CSS BS
+
+1. Landing page - min 10 sections
+2. Business Websites - 10+ pages
+3. Web app Ecommers - (online store) ex amazon end to end
+4.
 
 Day 33 – Tue 5th May
 Class 33
