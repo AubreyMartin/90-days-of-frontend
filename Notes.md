@@ -1105,24 +1105,67 @@ Concept:
 
 Week 6
 
-Day 32 – Mon 4th May
-Class 32
+Day 32 – Mon 4th May  
+Class 32  
 Concept: Projects
 
-3 projects on web designing HTML CSS BS
+---
 
-1. Landing page - min 10 sections
-2. Business Websites - 10+ pages
-3. Web app Ecommers - (online store) ex amazon end to end
-4.
+3 Projects on Web Designing (HTML, CSS, Bootstrap)
 
-Day 33 – Tue 5th May
-Class 33
-Concept:
+1. Landing Page – minimum 10 sections
+2. Business Website – 10+ pages
+3. Web App (E-commerce) – full online store (like Amazon)
+4. Portfolio Website (personal branding)
+
+---
+
+Notes:
+
+1. Focus on layout + responsiveness
+2. Use reusable components (navbar, cards, footer)
+3. Keep UI clean and consistent
+4. Add real content (not dummy everywhere)
+5. Make projects portfolio-ready
+
+---
+
+Day 33 – Tue 5th May  
+Class 33  
+Concept: JavaScript
+
+---
+
+1. Basic JavaScript
+2. Explore JS in browser (console, inspect)
+
+---
+
+# Variables
+
+---
+
+var → old way (function scoped)
+
+let → block scoped (preferred)
+
+const → cannot be reassigned
+
+---
+
+Notes:
+
+1. Use let and const instead of var
+2. JS runs in browser (DOM interaction)
+3. Use console.log() for debugging
+4. Understand data types (string, number, boolean)
+5. Practice basic syntax daily
+
+---
 
 Day 34 – Wed 6th May
 Class 34
-Concept:
+Concept: Just Q&A 20mins class
 
 Day 35 – Thu 7th May
 Class 35
