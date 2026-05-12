@@ -1138,8 +1138,29 @@ Concept: JavaScript
 
 1. Basic JavaScript
 2. Explore JS in browser (console, inspect)
+   Install node Js
 
 ---
+
+Type of == tell the data
+Date Types
+number -- any number ? int / float
+big int
+string -- group of char's - quotes '' , "" ,
+float
+boolean- true / false
+Null- empty -intentionally no value
+undefine - intentionally not assign
+
+---
+
+Js
+es
+Jquery
+react Js
+node Js
+express js
+Mongo db
 
 # Variables
 
@@ -1165,19 +1186,124 @@ Notes:
 
 Day 34 – Wed 6th May
 Class 34
-Concept: Just Q&A 20mins class
+Concept: Just Q&A about the project 10mins class
 
 Day 35 – Thu 7th May
 Class 35
-Concept:
+Concept: JS
+--
+
+objects
+-0---
+group of properties - key: value
+{
+name: value
+
+}
+
+: dot notation
+[" "] bracket notation
+
+## Array
+
+collection of elements
+can have number
+
+## Function
+
+very important concept
+
+block of code
+to perform a specific task
+reusable
+execute when called or invoke.
+
+function name (){
+}
+
+## parameter and arguments
+
+Ref & value
+
+predefined
+user defined
+
+with parameter with return
+without parameter with return
+with parameter without return
+without parameter without return
+
+Note:
+array are objects in js
+
+---
 
 Day 36 – Fri 8th May
 Class 36
-Concept:
+Concept: JS
+
+## operators
+
+= - assignment
+== - compare value - num , stringNum
+=== - compare value & type
+
+## conditions
+
+if
+if else
+if else if
+switch
+
+## logical Operators
+
+&& -and
+|| or
+! - not
+
+tt- t
+tf- t
+ft- t
+ff-f
+
+## ! - not
+
+t-f
+f-t
+
+## !!!!!T
 
 Day 37 – Sat 9th May
 Class 37
-Concept:
+Concept: JS
+
+---
+
+switch operator
+
+loops
+interation
+repeated
+init, cond, update
+
+for, while , do while
+for (init, cond, updatation){}
+
+Steps\_\_
+
+init
+while(cond)
+{
+update
+}
+
+do while
+
+## note:
+
+why we use while loop and for loop??
+
+---
 
 Week 7
 
@@ -1185,25 +1311,37 @@ Day 38 – Mon 11th May
 Class 38
 Concept:
 
+---
+
 Day 39 – Tue 12th May
 Class 39
 Concept:
+
+---
 
 Day 40 – Wed 13th May
 Class 40
 Concept:
 
+---
+
 Day 41 – Thu 14th May
 Class 41
 Concept:
+
+---
 
 Day 42 – Fri 15th May
 Class 42
 Concept:
 
+---
+
 Day 43 – Sat 16th May
 Class 43
 Concept:
+
+---
 
 Week 8
 

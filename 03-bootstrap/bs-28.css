@@ -10,3 +10,19 @@
     width: 100%;
     border-radius: 8px;
 }
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
