@@ -1238,84 +1238,223 @@ array are objects in js
 
 ---
 
-Day 36 – Fri 8th May
-Class 36
-Concept: JS
-
-## operators
-
-= - assignment
-== - compare value - num , stringNum
-=== - compare value & type
-
-## conditions
-
-if
-if else
-if else if
-switch
-
-## logical Operators
-
-&& -and
-|| or
-! - not
-
-tt- t
-tf- t
-ft- t
-ff-f
-
-## ! - not
-
-t-f
-f-t
-
-## !!!!!T
-
-Day 37 – Sat 9th May
-Class 37
-Concept: JS
+Day 38 – Mon 11th May  
+Class 38  
+Concept: JavaScript (ES6)
 
 ---
 
-switch operator
+# ES6
 
-loops
-interation
-repeated
-init, cond, update
+---
 
-for, while , do while
-for (init, cond, updatation){}
+Modern JavaScript
 
-Steps\_\_
+Introduced cleaner syntax and new features
 
-init
-while(cond)
-{
-update
+---
+
+# Variables
+
+---
+
+var → can redeclare and reassign
+
+let → cannot redeclare, but can reassign
+
+const → cannot redeclare or reassign
+
+---
+
+# Hoisting
+
+---
+
+Variable declared before access:
+
+var → undefined
+
+let / const → cannot access before initialization
+
+---
+
+# Functions
+
+---
+
+Reusable block of code
+
+Used to perform a specific task
+
+Executes only when called / invoked
+
+Syntax:
+function name() {
+
 }
 
-do while
+---
 
-## note:
-
-why we use while loop and for loop??
+# Anonymous Functions
 
 ---
 
-Week 7
+Functions without a name
 
-Day 38 – Mon 11th May
-Class 38
-Concept:
+Mostly used for callbacks
+
+Example:
+setTimeout(function() {
+
+}, 1000)
 
 ---
 
-Day 39 – Tue 12th May
-Class 39
-Concept:
+# Predefined String Methods
+
+---
+
+trim() → removes extra spaces
+
+toUpperCase() → converts to uppercase
+
+toLowerCase() → converts to lowercase
+
+slice() → extracts part of string
+
+substring() → extracts characters between indexes
+
+split() → converts string to array
+
+replace() → replaces value in string
+
+indexOf() → first matching index
+
+lastIndexOf() → last matching index
+
+length → total characters count
+
+---
+
+# Notes
+
+---
+
+Strings are immutable in JavaScript
+
+Methods return new values
+
+Use console.log() for testing and debugging
+
+Prefer let and const over var
+
+---
+
+Day 39 – Tue 12th May  
+Class 39  
+Concept: JavaScript Arrays
+
+---
+
+# Arrays
+
+---
+
+Collection of elements
+
+Can store multiple values in one variable
+
+Index starts from 0
+
+---
+
+# Add / Remove Methods
+
+---
+
+push() → add element at end
+
+pop() → remove last element
+
+shift() → remove first element
+
+unshift() → add element at beginning
+
+splice() → add/remove elements at specific position
+
+---
+
+# Iteration Methods
+
+---
+
+Used to loop through arrays
+
+---
+
+forEach()  
+→ access elements  
+→ perform task  
+→ does NOT return new array
+
+---
+
+map()  
+→ access elements  
+→ perform task  
+→ returns new array
+
+Used to transform data
+
+---
+
+filter()  
+→ returns elements based on condition
+
+Returns a new filtered array
+
+---
+
+reduce()  
+→ combines all values into one result
+
+Example:
+
+- total sum
+- total price
+
+---
+
+find()  
+→ returns first matching element
+
+---
+
+some()  
+→ checks if SOME elements match condition
+
+Returns true / false
+
+---
+
+every()  
+→ checks if ALL elements match condition
+
+Returns true / false
+
+---
+
+# Notes
+
+---
+
+map(), filter(), reduce() return new arrays/results
+
+forEach() is mostly used for side effects
+
+Use callbacks inside iteration methods
+
+Arrays are mutable in JavaScript
 
 ---
 
