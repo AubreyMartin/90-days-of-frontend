@@ -1,0 +1,949 @@
+/* ============================================
+   THE MARTIN COLLECTION — Global Stylesheet
+   martin.css — Link this on every page
+   ============================================ */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap');
+
+
+/* ============================================
+   1. CSS VARIABLES — Colours & Typography
+   ============================================ */
+:root {
+    /* Colours */
+    --navy: #0a1628;
+    /* Primary background — deep navy */
+    --navy-mid: #1a3a6b;
+    /* Secondary navy — cards, sections */
+    --navy-light: #213a5c;
+    /* Hover states, borders */
+    --gold: #c9a84c;
+    /* Accent — buttons, headings, highlights */
+    --gold-light: #e2c97e;
+    /* Gold hover state */
+    --cream: #f8f4ee;
+    /* Light background */
+    --cream-dark: #ede7dc;
+    /* Cream borders, dividers */
+    --white: #ffffff;
+    --text-light: rgba(248, 244, 238, 0.75);
+    /* Body text on dark bg */
+    --text-muted: rgba(248, 244, 238, 0.45);
+    /* Muted text on dark bg */
+    --text-dark: #1a1a2e;
+    /* Body text on light bg */
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Raleway', sans-serif;
+
+    /* Spacing */
+    --section-py: 80px;
+    /* Vertical padding for sections */
+    --section-py-sm: 48px;
+    /* Smaller sections */
+
+    /* Border */
+    --border-gold: 1px solid rgba(201, 168, 76, 0.35);
+    --border-cream: 1px solid #ede7dc;
+    --border-navy: 1px solid rgba(255, 255, 255, 0.08);
+
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+
+/* ============================================
+   2. RESET & BASE
+   ============================================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-dark);
+    background-color: var(--cream);
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================================
+   3. TYPOGRAPHY
+   ============================================ */
+
+/* All headings use Playfair Display */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--navy);
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 56px);
+}
+
+h2 {
+    font-size: clamp(24px, 3.5vw, 40px);
+}
+
+h3 {
+    font-size: clamp(20px, 2.5vw, 28px);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+/* Italic hero headings — used in hero sections */
+.heading-italic {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Gold overline label above headings */
+.overline {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Section subtitle */
+.subtitle {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-light);
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* On light backgrounds */
+.subtitle-dark {
+    color: #555;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ============================================
+   4. COLOUR UTILITY CLASSES
+   ============================================ */
+.bg-navy {
+    background-color: var(--navy);
+}
+
+.bg-navy-mid {
+    background-color: var(--navy-mid);
+}
+
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-cream {
+    color: var(--cream);
+}
+
+.text-light-muted {
+    color: var(--text-light);
+}
+
+.text-navy {
+    color: var(--navy);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+
+/* ============================================
+   5. NAVBAR
+   ============================================ */
+.mc-navbar {
+    background-color: var(--navy);
+    padding: 14px 0;
+    border-bottom: var(--border-gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.mc-navbar .navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+.mc-navbar .navbar-brand span {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.mc-navbar .nav-link {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light) !important;
+    padding: 8px 16px !important;
+    transition: var(--transition);
+}
+
+.mc-navbar .nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.mc-navbar .nav-link.active {
+    color: var(--gold) !important;
+}
+
+/* Reserve Now button in navbar */
+.btn-reserve {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.btn-reserve:hover {
+    background-color: var(--gold-light);
+    color: var(--navy);
+}
+
+/* Toggler on mobile */
+.mc-navbar .navbar-toggler {
+    border-color: var(--gold);
+}
+
+.mc-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* ============================================
+   6. HERO SECTION
+   ============================================ */
+.mc-hero {
+    background-color: var(--navy);
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle pattern overlay — works without an image */
+.mc-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(45deg,
+            rgba(26, 58, 107, 0.15) 0px,
+            rgba(26, 58, 107, 0.15) 1px,
+            transparent 1px,
+            transparent 24px);
+    pointer-events: none;
+}
+
+.mc-hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.mc-hero h1 {
+    color: var(--cream);
+    margin-bottom: 16px;
+}
+
+.mc-hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+.mc-hero p {
+    color: var(--text-light);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+}
+
+/* Hero with background image — add inline style="background-image: url(...)" */
+.mc-hero-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mc-hero-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 22, 40, 0.65);
+}
+
+.mc-hero-img .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ============================================
+   7. BUTTONS
+   ============================================ */
+
+/* Primary — gold filled */
+.btn-mc-primary {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    background-color: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 13px 28px;
+    border-radius: 2px;
+    display: inline-block;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-mc-primary:hover {
+    background-color: var(--gold-light);
+    color: var(--navy);
+}
+
+/* Secondary — outlined gold */
+.btn-mc-secondary {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 12px 28px;
+    border-radius: 2px;
+    display: inline-block;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-mc-secondary:hover {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+/* Ghost — white outlined, for use on dark backgrounds */
+.btn-mc-ghost {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(248, 244, 238, 0.4);
+    padding: 12px 28px;
+    border-radius: 2px;
+    display: inline-block;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-mc-ghost:hover {
+    border-color: var(--cream);
+    color: var(--cream);
+}
+
+
+/* ============================================
+   8. SECTIONS
+   ============================================ */
+.mc-section {
+    padding: var(--section-py) 0;
+}
+
+.mc-section-sm {
+    padding: var(--section-py-sm) 0;
+}
+
+/* Section heading block — overline + h2 + optional subtitle */
+.section-header {
+    margin-bottom: 48px;
+}
+
+.section-header.center {
+    text-align: center;
+}
+
+.section-header.center .subtitle {
+    margin: 12px auto 0;
+}
+
+.section-header .subtitle {
+    margin-top: 12px;
+}
+
+
+/* ============================================
+   9. CARDS
+   ============================================ */
+
+/* Property / Feature card — dark */
+.mc-card-dark {
+    background-color: var(--navy);
+    border: var(--border-gold);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.mc-card-dark:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+}
+
+.mc-card-dark .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mc-card-dark .card-body {
+    padding: 20px;
+}
+
+.mc-card-dark .card-region {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.mc-card-dark .card-title {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--cream);
+    margin-bottom: 6px;
+}
+
+.mc-card-dark .card-text {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+/* Card — light (for cream bg sections) */
+.mc-card-light {
+    background-color: var(--white);
+    border: var(--border-cream);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.mc-card-light:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(10, 22, 40, 0.1);
+}
+
+.mc-card-light .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mc-card-light .card-body {
+    padding: 20px;
+}
+
+.mc-card-light .card-region {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.mc-card-light .card-title {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.mc-card-light .card-text {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+
+/* ============================================
+   10. STATS / NUMBERS BAR
+   ============================================ */
+.mc-stats {
+    background-color: var(--navy-mid);
+    padding: 28px 0;
+    border-top: var(--border-gold);
+    border-bottom: var(--border-gold);
+}
+
+.mc-stats .stat-number {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--gold);
+    display: block;
+}
+
+.mc-stats .stat-label {
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.mc-stats .stat-item {
+    text-align: center;
+}
+
+/* Divider between stats */
+.mc-stats .stat-item+.stat-item {
+    border-left: var(--border-navy);
+}
+
+
+/* ============================================
+   11. DIVIDERS & DECORATIVE ELEMENTS
+   ============================================ */
+
+/* Gold thin line divider */
+.mc-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(201, 168, 76, 0.25);
+    margin: 0;
+}
+
+/* Gold ornament line — centered, used below headings */
+.mc-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px auto 0;
+    width: fit-content;
+}
+
+.mc-ornament::before,
+.mc-ornament::after {
+    content: '';
+    width: 48px;
+    height: 1px;
+    background-color: var(--gold);
+    opacity: 0.5;
+}
+
+.mc-ornament-dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--gold);
+    border-radius: 50%;
+}
+
+
+/* ============================================
+   12. TESTIMONIALS
+   ============================================ */
+.mc-testimonial {
+    background-color: var(--white);
+    border: var(--border-cream);
+    border-radius: 4px;
+    padding: 28px;
+    height: 100%;
+}
+
+.mc-testimonial .stars {
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.mc-testimonial blockquote {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--navy);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.mc-testimonial .guest-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy-mid);
+    letter-spacing: 1px;
+}
+
+.mc-testimonial .guest-detail {
+    font-size: 11px;
+    color: #999;
+}
+
+
+/* ============================================
+   13. BADGES / LABELS
+   ============================================ */
+.badge-region {
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    padding: 3px 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.badge-mc {
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: var(--gold);
+    color: var(--navy);
+    padding: 4px 12px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+
+/* ============================================
+   14. FORMS
+   ============================================ */
+.mc-form .form-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.mc-form .form-control,
+.mc-form .form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    border-radius: 2px;
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 13px;
+    padding: 12px 14px;
+    transition: var(--transition);
+}
+
+.mc-form .form-control:focus,
+.mc-form .form-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--cream);
+}
+
+.mc-form .form-control::placeholder {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* Light form variant — for cream backgrounds */
+.mc-form-light .form-control,
+.mc-form-light .form-select {
+    background-color: var(--white);
+    border: var(--border-cream);
+    color: var(--text-dark);
+}
+
+.mc-form-light .form-control:focus,
+.mc-form-light .form-select:focus {
+    border-color: var(--gold);
+    color: var(--text-dark);
+}
+
+.mc-form-light .form-label {
+    color: #777;
+}
+
+
+/* ============================================
+   15. FOOTER
+   ============================================ */
+.mc-footer {
+    background-color: #060e1a;
+    padding: 60px 0 0;
+    border-top: var(--border-gold);
+}
+
+.mc-footer .footer-brand {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.mc-footer .footer-tagline {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.mc-footer .footer-heading {
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.mc-footer a {
+    display: block;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    transition: var(--transition);
+}
+
+.mc-footer a:hover {
+    color: var(--gold);
+}
+
+.mc-footer-bottom {
+    border-top: var(--border-navy);
+    padding: 18px 0;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.mc-footer-bottom p {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0;
+    opacity: 0.5;
+}
+
+
+/* ============================================
+   16. ACCORDION (FAQ page)
+   ============================================ */
+.mc-accordion .accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--border-gold);
+}
+
+.mc-accordion .accordion-button {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    color: var(--cream);
+    background-color: transparent;
+    padding: 20px 0;
+    box-shadow: none;
+}
+
+.mc-accordion .accordion-button:not(.collapsed) {
+    color: var(--gold);
+    background-color: transparent;
+}
+
+.mc-accordion .accordion-button::after {
+    filter: invert(1) sepia(1) saturate(2) hue-rotate(5deg);
+}
+
+.mc-accordion .accordion-body {
+    font-size: 13px;
+    color: var(--text-light);
+    padding: 0 0 20px;
+    line-height: 1.8;
+}
+
+
+/* ============================================
+   17. UTILITY HELPERS
+   ============================================ */
+.letter-spacing-wide {
+    letter-spacing: 3px;
+}
+
+.letter-spacing-wider {
+    letter-spacing: 5px;
+}
+
+.text-uppercase-sm {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Image placeholder — use when no real image yet */
+.img-placeholder {
+    background-color: var(--navy-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Full width section image */
+.mc-full-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Two-col split layout helper */
+.mc-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .mc-split {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+
+/* ============================================
+   18. RESPONSIVE TWEAKS
+   ============================================ */
+@media (max-width: 991px) {
+    :root {
+        --section-py: 56px;
+    }
+
+    .mc-navbar .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .mc-stats .stat-item+.stat-item {
+        border-left: none;
+        border-top: var(--border-navy);
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --section-py: 40px;
+    }
+}
+
+</style>
